@@ -1,0 +1,123 @@
+	/*  Global */
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	background-color: #fff;
+}
+
+#featured_work {
+	margin: 0rem 0rem 2rem 5rem;
+	color: #7d97ad;
+	font-size: 1.5rem;
+}
+
+.checklist,
+.weekly_reports,
+.voice-of-employee,
+.container {
+	box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+p {
+	text-align: center;
+}
+
+hr {
+	border-color: #7d97ad;
+}
+
+#name,
+#udacity_program {
+	text-align: right;
+	color: #7d97ad;
+	letter-spacing: 2px;
+}
+
+.udacity_logo {
+	max-height: 100%;
+	max-width: 20%;
+	color: #02b3e4;
+	margin: 2%;
+}
+
+.languages {
+	margin-left: 20%;
+	max-height: 100%;
+	max-width: 50%;
+	margin-bottom: 9%;
+}
+
+.container {
+	margin-top: 1%;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: 100%;
+	margin-bottom: 2%;
+}
+
+.images {
+	height: auto;
+	max-width: 100%;
+	margin-left: 20%;
+}
+
+
+/* Media query targeting iPads */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+	/* Styles */
+	#name,
+	#udacity_program {
+		text-align: center;
+	}
+	.udacity_logo {
+		max-width: 60%;
+		margin-left: 15%;
+	}
+	.images {
+		margin-left: 10%;
+	}
+	p {
+		text-align: left;
+		margin-left: 28%;
+		font-size: 1.5rem;
+	}
+	.languages {
+		margin-left: 25%;
+	}
+	#udacity_program {
+		font-size: 1.4rem;
+	}
+	#featured_work {
+		margin: 0rem 0rem 1rem 1rem;
+		font-size: 1.5rem;
+	}
+	/* Media query targeting Nexus 5 */
+	@media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+		/* Styles */
+		.udacity_logo {
+			max-width: 60%;
+			margin-left: 8%;
+		}
+		#udacity_program,
+		#name {
+			text-align: center;
+			font-size: 1rem;
+			margin-left: -18%;
+		}
+		.images {
+			margin-left: 12%;
+		}
+		p {
+			margin-left: -14%;
+		}
+		#featured_work {
+			margin: 0rem 0rem 1rem 3rem;
+			font-size: 1rem;
+		}
+	}
